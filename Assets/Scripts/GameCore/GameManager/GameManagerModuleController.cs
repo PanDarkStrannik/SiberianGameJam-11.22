@@ -2,7 +2,7 @@ using GameCore.Patterns;
 
 namespace GameCore
 {
-    public abstract class GameManagerModuleController<TData> : IDataDriver<TData>, IGameManagerModuleController
+    public abstract class BaseGameManagerModuleController<TData> : IDataDriver<TData>, IBaseGameManagerModuleController
         where TData : GameManagerModule
     {
         public TData Data { get; private set; }
@@ -23,7 +23,7 @@ namespace GameCore
         }
     }
 
-    public interface IGameManagerModuleController : IFabricCreated
+    public interface IBaseGameManagerModuleController : IFabricCreated
     {
     }
 }

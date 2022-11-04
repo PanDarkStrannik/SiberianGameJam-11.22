@@ -1,18 +1,18 @@
 using System.Collections.Generic;
 using System.Linq;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace GameCore.Patterns
 {
-    public class MonoSingleton : MonoBehaviour
+    public abstract class MonoSingleton<T> : MonoBehaviour
+        where T : MonoSingleton<T>
     {
-        private static MonoSingleton _instance;
-        public static MonoSingleton Instance
+        private static T _instance;
+        public static T Instance
         {
             get
             {
-                var instances = FindObjectsOfType<MonoSingleton>();
+                var instances = FindObjectsOfType<T>();
                 CleanSingletons(instances);
 
                 if (_instance != null && instances.Contains(_instance))
@@ -20,17 +20,27 @@ namespace GameCore.Patterns
                     return _instance;
                 }
 
-                var emptyGo = new GameObject(nameof(MonoSingleton), typeof(MonoSingleton));
-                _instance = emptyGo.GetComponent<MonoSingleton>();
+                var emptyGo = new GameObject(nameof(T), typeof(T));
+                _instance = emptyGo.GetComponent<T>();
 
                 return _instance;
             }
         }
 
 
-        private static void CleanSingletons(IEnumerable<MonoSingleton> singletons)
+        private void Awake()
+        {
+            DontDestroyOnLoad(this);
+            Initialize();
+        }
+
+        protected abstract void Initialize();
+
+        private static void CleanSingletons(IEnumerable<T> singletons)
         {
             if (!singletons.Any()) return;
+            if (_instance == null) _instance = singletons.First();
+
             foreach (var singleton in singletons.ToArray())
             {
                 if (singleton != _instance)

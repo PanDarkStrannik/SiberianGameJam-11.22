@@ -9,8 +9,9 @@ using UnityEngine;
 namespace GameCore.GameManager
 {
     [Serializable]
-    public abstract class BaseGameManager<T> : MonoSingleton
-        where T: BaseGameManager<T>.BaseGameManageControllerFabric, new()
+    public abstract class BaseGameManager<T, TV> : MonoSingleton<TV>
+        where T: BaseGameManager<T, TV>.BaseGameManageControllerFabric, new()
+        where TV : BaseGameManager<T,TV>
     {
         [SerializeReference, ListDrawerSettings(ListElementLabelName = nameof(GameManagerModule.ModuleName))]
         private List<GameManagerModule> _modules = new List<GameManagerModule>();
@@ -19,15 +20,9 @@ namespace GameCore.GameManager
 
         private readonly OnceCallEvent _onInitialize = new OnceCallEvent();
 
-        public IReadOnlyList<IGameManagerModuleController> Controllers { get; private set; } = new List<IGameManagerModuleController>();
+        public IReadOnlyList<IBaseGameManagerModuleController> Controllers { get; private set; } = new List<IBaseGameManagerModuleController>();
 
-        
-        private void Awake()
-        {
-            Initialize();
-        }
-
-        protected virtual void Initialize()
+        protected override void Initialize()
         {
             Controllers = _modules.ToHashSet().Select(module => _fabric.Create(module)).ToList();
             _onInitialize.Invoke();
@@ -38,14 +33,14 @@ namespace GameCore.GameManager
             _onInitialize.Subscribe(subscriber);
         }
 
-        public TModuleController GetModule<TModuleController>() 
-            where TModuleController : IGameManagerModuleController
+        public TController GetController<TController>()
+            where TController : IBaseGameManagerModuleController
         {
-            Controllers.TryGet<IGameManagerModuleController, TModuleController>(out var controller);
-            return controller;
+            Controllers.TryGet(out TController element);
+            return element;
         }
 
-        public abstract class BaseGameManageControllerFabric : InitializerFabric<IGameManagerModuleController, GameManagerModule>
+        public abstract class BaseGameManageControllerFabric : InitializerFabric<IBaseGameManagerModuleController, GameManagerModule>
         {
         }
     }

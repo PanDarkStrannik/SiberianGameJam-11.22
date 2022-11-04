@@ -5,7 +5,7 @@ using GameCore.GameManager;
 namespace GameClient
 {
     [Serializable]
-    public class GameManager : BaseGameManager<GameManager.GameManagerControllerFabric>
+    public class GameManager : BaseGameManager<GameManager.GameManagerControllerFabric, GameManager>
     {
         public class GameManagerControllerFabric : BaseGameManageControllerFabric
         {

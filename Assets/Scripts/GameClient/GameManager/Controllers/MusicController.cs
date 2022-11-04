@@ -2,7 +2,7 @@ using GameCore;
 
 namespace GameClient
 {
-    public class MusicController : GameManagerModuleController<MusicModule>
+    public class MusicController : BaseGameManagerModuleController<MusicModule>
     {
 
     }
