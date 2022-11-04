@@ -10,7 +10,7 @@ namespace GameCore.Proto
     [Serializable]
     public class ProtoData
     {
-        [OdinSerialize, ShowInInspector, ListDrawerSettings(ListElementLabelName = nameof(BaseProtoModule.ModuleName))]
+        [OdinSerialize, ShowInInspector, ListDrawerSettings(ListElementLabelName = nameof(BaseProtoModule.ModuleName), HideRemoveButton = true)]
         private List<BaseProtoModule> _protoModules = new List<BaseProtoModule>();
 
         public IReadOnlyCollection<BaseProtoModule> ProtoModules => _protoModules.ToHashSet();

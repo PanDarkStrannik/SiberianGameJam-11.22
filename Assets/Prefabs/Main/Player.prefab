@@ -51,6 +51,7 @@ MonoBehaviour:
   - rid: 7610812995942481920
   - rid: 7610812995942481921
   - rid: 7610812998307282945
+  - rid: 7610812998307282949
   references:
     version: 2
     RefIds:
@@ -68,6 +69,8 @@ MonoBehaviour:
         _moveAnim:
           _upDownParameter: 
           _leftRightParameter: 
+    - rid: 7610812998307282949
+      type: {class: PlayerStatModule, ns: GameClient, asm: GameClient}
 --- !u!50 &7558816611362379667
 Rigidbody2D:
   serializedVersion: 4

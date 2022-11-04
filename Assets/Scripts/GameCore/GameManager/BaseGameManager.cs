@@ -13,7 +13,7 @@ namespace GameCore.GameManager
         where T: BaseGameManager<T, TV>.BaseGameManageControllerFabric, new()
         where TV : BaseGameManager<T,TV>
     {
-        [SerializeReference, ListDrawerSettings(ListElementLabelName = nameof(GameManagerModule.ModuleName))]
+        [SerializeReference, ListDrawerSettings(ListElementLabelName = nameof(GameManagerModule.ModuleName), HideRemoveButton = true)]
         private List<GameManagerModule> _modules = new List<GameManagerModule>();
 
         private T _fabric = new T();

@@ -13,7 +13,7 @@ namespace GameCore
         where T : BasePlayer<T, TV>.BasePlayerControllerFabric, new()
         where TV : MonoSingleton<TV>
     {
-        [SerializeReference, ListDrawerSettings(ListElementLabelName = nameof(BasePlayerModule.ModuleName))]
+        [SerializeReference, ListDrawerSettings(ListElementLabelName = nameof(BasePlayerModule.ModuleName), HideRemoveButton = true)]
         private List<BasePlayerModule> _modules = new List<BasePlayerModule>();
 
         public IReadOnlyList<IBasePlayerModuleController> Controllers { get; private set; } = new List<IBasePlayerModuleController>();

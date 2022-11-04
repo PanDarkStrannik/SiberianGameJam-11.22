@@ -14,7 +14,8 @@ namespace GameClient
                 {
                     {typeof(PlayerInputModule), typeof(PlayerInputController)},
                     {typeof(PlayerMovementModule), typeof(PlayerMovementController) },
-                    {typeof(PlayerAnimatorModule), typeof(PlayerAnimatorController) }
+                    {typeof(PlayerAnimatorModule), typeof(PlayerAnimatorController) },
+                    {typeof(PlayerStatModule), typeof(PlayerStatController)}
                 };
             }
         }
