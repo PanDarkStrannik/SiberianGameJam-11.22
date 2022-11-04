@@ -1,13 +1,15 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
-using Utils;
+using GameCore.Utils;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 
-namespace Proto
+namespace GameCore.Proto
 {
+    [Serializable]
     public class ProtoData
     {
-        [SerializeField] private List<ProtoModule> _protoModules = new List<ProtoModule>();
+        [OdinSerialize, ShowInInspector] private List<ProtoModule> _protoModules = new List<ProtoModule>();
 
         public bool HasModule(Type moduleType)
         {

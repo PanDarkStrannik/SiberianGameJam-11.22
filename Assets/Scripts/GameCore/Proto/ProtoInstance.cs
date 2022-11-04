@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Proto
+namespace GameCore.Proto
 {
     public class ProtoInstance : MonoBehaviour
     {
