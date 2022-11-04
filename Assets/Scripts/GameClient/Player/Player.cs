@@ -13,7 +13,8 @@ namespace GameClient
                 return new Dictionary<Type, Type>
                 {
                     {typeof(PlayerInputModule), typeof(PlayerInputController)},
-                    {typeof(PlayerMovementModule), typeof(PlayerMovementController) }
+                    {typeof(PlayerMovementModule), typeof(PlayerMovementController) },
+                    {typeof(PlayerAnimatorModule), typeof(PlayerAnimatorController) }
                 };
             }
         }

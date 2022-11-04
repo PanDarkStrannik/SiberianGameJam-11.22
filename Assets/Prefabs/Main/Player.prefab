@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1818572195089029462}
   - component: {fileID: -666682229065847520}
   - component: {fileID: 7558816611362379667}
+  - component: {fileID: 7396491910403158802}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -49,6 +50,7 @@ MonoBehaviour:
   _modules:
   - rid: 7610812995942481920
   - rid: 7610812995942481921
+  - rid: 7610812998307282945
   references:
     version: 2
     RefIds:
@@ -59,6 +61,13 @@ MonoBehaviour:
       data:
         _body: {fileID: 7558816611362379667}
         _playerSpeed: 10
+    - rid: 7610812998307282945
+      type: {class: PlayerAnimatorModule, ns: GameClient, asm: GameClient}
+      data:
+        _animator: {fileID: 7396491910403158802}
+        _moveAnim:
+          _upDownParameter: 
+          _leftRightParameter: 
 --- !u!50 &7558816611362379667
 Rigidbody2D:
   serializedVersion: 4
@@ -80,6 +89,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &7396491910403158802
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981596562529975391}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4807206758473288299
 GameObject:
   m_ObjectHideFlags: 0
