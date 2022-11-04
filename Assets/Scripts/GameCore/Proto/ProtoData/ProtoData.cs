@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using GameCore.Utils;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -9,7 +10,9 @@ namespace GameCore.Proto
     [Serializable]
     public class ProtoData
     {
-        [OdinSerialize, ShowInInspector] private List<ProtoModule> _protoModules = new List<ProtoModule>();
+        [OdinSerialize, ShowInInspector] private List<BaseProtoModule> _protoModules = new List<BaseProtoModule>();
+
+        public IReadOnlyCollection<BaseProtoModule> ProtoModules => _protoModules.ToHashSet();
 
         public bool HasModule(Type moduleType)
         {
@@ -17,7 +20,7 @@ namespace GameCore.Proto
         }
 
         public bool TryGetModule<TProtoModule>(Type moduleType, out TProtoModule module) 
-            where TProtoModule : ProtoModule
+            where TProtoModule : BaseProtoModule
         {
             var hasModule = _protoModules.TryGet(moduleType, out var someModule);
             module = someModule as TProtoModule;

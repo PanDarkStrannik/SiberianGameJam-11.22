@@ -10,7 +10,7 @@ namespace GameCore.GameManager
 {
     [Serializable]
     public abstract class BaseGameManager<T> : MonoSingleton
-        where T: BaseGameManageControllerFabric, new()
+        where T: BaseGameManager<T>.BaseGameManageControllerFabric, new()
     {
         [SerializeReference, ListDrawerSettings(ListElementLabelName = nameof(GameManagerModule.ModuleName))]
         private List<GameManagerModule> _modules = new List<GameManagerModule>();
@@ -43,6 +43,10 @@ namespace GameCore.GameManager
         {
             Controllers.TryGet<IGameManagerModuleController, TModuleController>(out var controller);
             return controller;
+        }
+
+        public abstract class BaseGameManageControllerFabric : InitializerFabric<IGameManagerModuleController, GameManagerModule>
+        {
         }
     }
 }
