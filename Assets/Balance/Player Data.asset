@@ -15,10 +15,7 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 3981596562529975391, guid: 1e5688ca1cd395644ba585545e86a383, type: 3}
-    - {fileID: 7396491910403158802, guid: 1e5688ca1cd395644ba585545e86a383, type: 3}
-    - {fileID: 7558816611362379667, guid: 1e5688ca1cd395644ba585545e86a383, type: 3}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -34,21 +31,12 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|GameClient.PlayerInputModule, GameClient
-    - Name: InitGameObject
-      Entry: 10
-      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
       Data: 2|GameClient.PlayerAnimatorModule, GameClient
-    - Name: InitGameObject
-      Entry: 10
-      Data: 0
-    - Name: _animator
-      Entry: 10
-      Data: 1
     - Name: _moveAnim
       Entry: 7
       Data: 3|GameClient.PlayerAnimatorModule+MoveAnimParameters, GameClient
@@ -67,9 +55,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|GameClient.PlayerStatModule, GameClient
-    - Name: InitGameObject
-      Entry: 10
-      Data: 0
     - Name: _stats
       Entry: 7
       Data: 5|System.Collections.Generic.Dictionary`2[[GameClient.PlayerStatModule+PlayerStats,
@@ -186,15 +171,9 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 11|GameClient.PlayerMovementModule, GameClient
-    - Name: InitGameObject
-      Entry: 10
-      Data: 0
-    - Name: _body
-      Entry: 10
-      Data: 2
     - Name: _playerSpeed
       Entry: 3
-      Data: 100
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
@@ -204,4 +183,3 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  _gameObject: {fileID: 3981596562529975391, guid: 1e5688ca1cd395644ba585545e86a383, type: 3}
