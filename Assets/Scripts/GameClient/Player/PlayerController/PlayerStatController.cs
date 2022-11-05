@@ -9,6 +9,9 @@ namespace GameClient
     {
         private readonly Dictionary<PlayerStatModule.PlayerStats, StatDataController> _stats = new Dictionary<PlayerStatModule.PlayerStats, StatDataController>();
 
+        private int _damageCallCount = 0;
+        private List<PlayerStatModule.PlayerStats> _statsDamageQueue = new List<PlayerStatModule.PlayerStats>();
+
         public IReadOnlyList<StatDataController> StatsDataControllers => _stats.Values.ToList();
 
         protected override void InternalInitialize()
@@ -20,9 +23,28 @@ namespace GameClient
             }
         }
 
-        public void ChangeStat(PlayerStatModule.PlayerStats stat, int damageValue)
+        public void DamageStat(PlayerStatModule.PlayerStats stat)
         {
+            _damageCallCount++;
             var controllerToDamage = _stats[stat];
+            var repeatCount = _statsDamageQueue.Contains(stat) ? 1 : 0;
+            for (var i = 0; i < _statsDamageQueue.Count - 1; i++)
+            {
+                var element1 = _statsDamageQueue[i];
+                var element2 = _statsDamageQueue[i + 1];
+                if (element1 == element2)
+                {
+                    repeatCount++;
+                }
+            }
+
+            if (_statsDamageQueue.Count > 3)
+            {
+                _statsDamageQueue.RemoveAt(0);
+            }
+            _statsDamageQueue.Add(stat);
+
+            var damageValue = Data.GetDamageFromTable(_damageCallCount, repeatCount);
             controllerToDamage.DamageStat(damageValue);
         }
 
