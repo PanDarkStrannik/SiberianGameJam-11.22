@@ -15,12 +15,12 @@ namespace GameClient
 
         protected override void InternalInitialize()
         {
+            _playerInstance = Player.Instance;
             _playerInstance.SubscribeOnInitialize(OnPlayerInitialized);
         }
 
         private void OnPlayerInitialized()
         {
-            _playerInstance = Player.Instance;
             _speed = Data.PlayerSpeed;
             _body = _playerInstance.gameObject.GetAllComponentsOfType<Rigidbody2D>().First();
             _inputController = _playerInstance.GetController<PlayerInputController>();
