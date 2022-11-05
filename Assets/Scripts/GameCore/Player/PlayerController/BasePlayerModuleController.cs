@@ -2,7 +2,7 @@ using GameCore.Patterns;
 
 namespace GameCore
 {
-    public class BasePlayerModuleController<T> : IDataDriver<T>, IBasePlayerModuleController
+    public abstract class BasePlayerModuleController<T> : IDataDriver<T>, IBasePlayerModuleController
         where T : BasePlayerModule
     {
         public T Data { get; private set; }
@@ -21,10 +21,15 @@ namespace GameCore
         {
 
         }
+
+        public virtual void Destroy()
+        {
+
+        }
     }
 
     public interface IBasePlayerModuleController : IFabricCreated
     {
-
+        public void Destroy();
     }
 }

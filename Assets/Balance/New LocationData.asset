@@ -24,6 +24,9 @@ MonoBehaviour:
     - Name: _dialog
       Entry: 7
       Data: 0|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: 
     - Name: _npcSay
       Entry: 6
       Data: 
@@ -39,6 +42,50 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 2|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: One answer
+    - Name: _npcSay
+      Entry: 6
+      Data: 
+    - Name: _playerSay
+      Entry: 6
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 4|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: Answer in one
+    - Name: _npcSay
+      Entry: 6
+      Data: 
+    - Name: _playerSay
+      Entry: 6
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
       Data: 0
     - Name: 
       Entry: 13
@@ -49,3 +96,85 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: Secound answer
+    - Name: _npcSay
+      Entry: 6
+      Data: 
+    - Name: _playerSay
+      Entry: 6
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 8|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: Third answer
+    - Name: _npcSay
+      Entry: 6
+      Data: 
+    - Name: _playerSay
+      Entry: 6
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _npcSprite: {fileID: 0}
+  _npcName: 

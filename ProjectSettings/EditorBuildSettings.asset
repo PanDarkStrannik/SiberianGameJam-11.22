@@ -6,6 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Menu.unity
+    guid: b5dfab6848a68f14180e46b9d70e7f58
+  - enabled: 1
+    path: Assets/Scenes/Street.unity
+    guid: 042a4686dc74e1a4ebf7453020f1295c
+  - enabled: 1
+    path: Assets/Scenes/BankRoom.unity
+    guid: 280f50cbcf73d824c9722df7bbe58229
+  - enabled: 1
+    path: Assets/Scenes/Hospital_Room.unity
+    guid: 3e452f810a266bb4cbe4940f58f404ab
+  - enabled: 1
+    path: Assets/Scenes/MVDRoom.unity
+    guid: c9a4d20d42bafc44986fcd894ce1ab99
+  - enabled: 1
+    path: Assets/Scenes/PhotoRoom.unity
+    guid: 7268a4f498ada6f49ad2912b2e7b6451
+  - enabled: 1
+    path: Assets/Scenes/PoliceRoom.unity
+    guid: 035c4f772d4807941b39ca7549175b5c
+  - enabled: 1
+    path: Assets/Scenes/VisaRoom.unity
+    guid: d33344835932fa3479390a434aeeeddb
   m_configObjects: {}

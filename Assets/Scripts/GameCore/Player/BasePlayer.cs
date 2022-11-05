@@ -6,9 +6,9 @@ using UnityEngine;
 
 namespace GameCore
 {
-    public abstract class BasePlayer<T, TV> : MonoSingleton<TV>
+    public abstract class BasePlayer<T, TV> : LazyMonoSingleton<TV>
         where T : BasePlayer<T, TV>.BasePlayerControllerFabric, new()
-        where TV : MonoSingleton<TV>
+        where TV : LazyMonoSingleton<TV>
     {
         [SerializeField] private PlayerData _playerData;
 
@@ -18,7 +18,7 @@ namespace GameCore
 
         private OnceCallEvent _onInitialize = new OnceCallEvent();
 
-        protected sealed override void Initialize()
+        private void Awake()
         {
             Controllers = _playerData.Modules.ToHashSet().Select(e => _fabric.Create(e)).ToList();
             InternalInitialize();
@@ -33,6 +33,14 @@ namespace GameCore
         public void SubscribeOnInitialize(OnceCallEvent.Subscriber subscriber)
         {
             _onInitialize.Subscribe(subscriber);
+        }
+
+        private void OnDestroy()
+        {
+            foreach (var controller in Controllers)
+            {
+                controller.Destroy();
+            }
         }
 
         public TController GetController<TController>()

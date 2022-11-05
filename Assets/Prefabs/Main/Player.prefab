@@ -48,30 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerData: {fileID: 11400000, guid: c10319ae7f5223249ac6eefc9a14b29b, type: 2}
-  _modules:
-  - rid: 7610812995942481920
-  - rid: 7610812995942481921
-  - rid: 7610812998307282945
-  - rid: 7610812998307282949
-  references:
-    version: 2
-    RefIds:
-    - rid: 7610812995942481920
-      type: {class: PlayerInputModule, ns: GameClient, asm: GameClient}
-    - rid: 7610812995942481921
-      type: {class: PlayerMovementModule, ns: GameClient, asm: GameClient}
-      data:
-        _body: {fileID: 7558816611362379667}
-        _playerSpeed: 10
-    - rid: 7610812998307282945
-      type: {class: PlayerAnimatorModule, ns: GameClient, asm: GameClient}
-      data:
-        _animator: {fileID: 7396491910403158802}
-        _moveAnim:
-          _upDownParameter: 
-          _leftRightParameter: 
-    - rid: 7610812998307282949
-      type: {class: PlayerStatModule, ns: GameClient, asm: GameClient}
 --- !u!50 &7558816611362379667
 Rigidbody2D:
   serializedVersion: 4
@@ -184,8 +160,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2110192629
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

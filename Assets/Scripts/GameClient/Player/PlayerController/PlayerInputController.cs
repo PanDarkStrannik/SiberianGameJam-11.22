@@ -17,6 +17,17 @@ namespace GameClient
 
         protected override void InternalInitialize()
         {
+            var player = Player.Instance;
+            player.SubscribeOnInitialize(OnInitialize);
+        }
+
+        public override void Destroy()
+        {
+            _playerInput.Dispose();
+        }
+
+        private void OnInitialize()
+        {
             _playerInput = new PlayerInput.PlayerInput();
             Enable();
         }

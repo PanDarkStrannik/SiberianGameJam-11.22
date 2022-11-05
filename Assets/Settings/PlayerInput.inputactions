@@ -178,7 +178,7 @@
                 {
                     "name": "",
                     "id": "c3615658-59cf-40b1-9aef-b20e8471e9b5",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "PlayerControlls",
