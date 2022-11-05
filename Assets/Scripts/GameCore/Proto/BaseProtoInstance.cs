@@ -8,7 +8,7 @@ namespace GameCore.Proto
     public abstract class BaseProtoInstance<T> : MonoBehaviour
         where T : BaseProtoInstance<T>.BaseProtoControllerFabric
     {
-        [SerializeField] private ProtoData _protoData = new ProtoData();
+        [SerializeField] private ProtoData _protoData;
 
         public ProtoData ProtoData => _protoData;
 

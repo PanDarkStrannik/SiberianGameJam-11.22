@@ -13,7 +13,10 @@ namespace GameClient
             {
                 return new Dictionary<Type, Type>
                 {
-                    {typeof(MusicModule), typeof(MusicController)}
+                    {typeof(MusicModule), typeof(MusicController)},
+                    {typeof(LevelSwitchModule), typeof(LevelSwitchController)},
+                    {typeof(TimerModule), typeof(TimerController)},
+                    {typeof(GameEndModule), typeof(GameEndController)}
                 };
             }
         }

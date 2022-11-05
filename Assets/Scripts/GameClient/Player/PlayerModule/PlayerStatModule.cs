@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using GameCore;
 using Sirenix.OdinInspector;
-using Sirenix.Serialization;
 using UnityEngine;
 
 namespace GameClient
@@ -10,10 +9,10 @@ namespace GameClient
     [Serializable]
     public sealed class PlayerStatModule : BasePlayerModule
     {
-        [OdinSerialize, ShowInInspector] private Dictionary<PlayerStats, StatData> _stats = new Dictionary<PlayerStats, StatData>();
+        [SerializeField] private Dictionary<PlayerStats, StatData> _stats = new Dictionary<PlayerStats, StatData>();
 
         public Dictionary<PlayerStats, StatData> Stats => _stats;
- 
+
         [Serializable, HideReferenceObjectPicker]
         public class StatData : ICloneable
         {

@@ -1,5 +1,7 @@
 using System;
+using System.Linq;
 using GameCore;
+using GameCore.Utils;
 using UnityEngine;
 
 namespace GameClient
@@ -8,10 +10,18 @@ namespace GameClient
     {
         private Animator _animator;
         private PlayerAnimatorModule.MoveAnimParameters _moveAnim;
+        private Player _player;
+
         protected override void InternalInitialize()
         {
-            _animator = Data.Animator;
+            _player = Player.Instance;
+            _player.SubscribeOnInitialize(OnPlayerInit);
+        }
+
+        private void OnPlayerInit()
+        {
             _moveAnim = Data.MoveAnim;
+            _animator = _player.gameObject.GetAllComponentsOfType<Animator>().First();
         }
 
         public void AnimateMove(Vector2 direction)

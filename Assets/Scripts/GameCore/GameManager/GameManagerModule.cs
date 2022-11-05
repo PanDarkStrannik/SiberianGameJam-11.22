@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 namespace GameCore
 {
     [Serializable, HideReferenceObjectPicker]
-    public abstract class GameManagerModule
+    public abstract class BaseGameManagerModule
     {
         public string ModuleName => GetType().Name;
     }

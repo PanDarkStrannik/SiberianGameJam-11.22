@@ -44,12 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473073712ead26242a4555840863b749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _modules:
-  - rid: 7610812980988739597
-  references:
-    version: 2
-    RefIds:
-    - rid: 7610812980988739597
-      type: {class: MusicModule, ns: GameClient, asm: GameClient}
-      data:
-        test: 100
+  _gameManagerData: {fileID: 11400000, guid: 76e601e9965d5b347b4963c7f137c414, type: 2}

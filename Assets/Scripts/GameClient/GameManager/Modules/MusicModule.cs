@@ -5,7 +5,7 @@ using UnityEngine;
 namespace GameClient
 {
     [Serializable]
-    public class MusicModule : GameManagerModule
+    public class MusicModule : BaseGameManagerModule
     {
         [SerializeField] private int test;
     }

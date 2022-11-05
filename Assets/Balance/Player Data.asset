@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41597814dd719bc41aaeb8d7868dd356, type: 3}
+  m_Name: Player Data
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 3981596562529975391, guid: 1e5688ca1cd395644ba585545e86a383, type: 3}
+    - {fileID: 7396491910403158802, guid: 1e5688ca1cd395644ba585545e86a383, type: 3}
+    - {fileID: 7558816611362379667, guid: 1e5688ca1cd395644ba585545e86a383, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _modules
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[GameCore.BasePlayerModule, GameCore]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 1|GameClient.PlayerInputModule, GameClient
+    - Name: InitGameObject
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|GameClient.PlayerAnimatorModule, GameClient
+    - Name: InitGameObject
+      Entry: 10
+      Data: 0
+    - Name: _animator
+      Entry: 10
+      Data: 1
+    - Name: _moveAnim
+      Entry: 7
+      Data: 3|GameClient.PlayerAnimatorModule+MoveAnimParameters, GameClient
+    - Name: _upDownParameter
+      Entry: 6
+      Data: 
+    - Name: _leftRightParameter
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|GameClient.PlayerStatModule, GameClient
+    - Name: InitGameObject
+      Entry: 10
+      Data: 0
+    - Name: _stats
+      Entry: 7
+      Data: 5|System.Collections.Generic.Dictionary`2[[GameClient.PlayerStatModule+PlayerStats,
+        GameClient],[GameClient.PlayerStatModule+StatData, GameClient]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 6|System.Collections.Generic.EnumEqualityComparer`1[[GameClient.PlayerStatModule+PlayerStats,
+        GameClient]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 7|GameClient.PlayerStatModule+StatData, GameClient
+    - Name: _startValue
+      Entry: 3
+      Data: 0
+    - Name: _fromMaxToMin
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 8|GameClient.PlayerStatModule+StatData, GameClient
+    - Name: _startValue
+      Entry: 3
+      Data: 100
+    - Name: _fromMaxToMin
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 9|GameClient.PlayerStatModule+StatData, GameClient
+    - Name: _startValue
+      Entry: 3
+      Data: 100
+    - Name: _fromMaxToMin
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 10|GameClient.PlayerStatModule+StatData, GameClient
+    - Name: _startValue
+      Entry: 3
+      Data: 100
+    - Name: _fromMaxToMin
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 11|GameClient.PlayerMovementModule, GameClient
+    - Name: InitGameObject
+      Entry: 10
+      Data: 0
+    - Name: _body
+      Entry: 10
+      Data: 2
+    - Name: _playerSpeed
+      Entry: 3
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _gameObject: {fileID: 3981596562529975391, guid: 1e5688ca1cd395644ba585545e86a383, type: 3}

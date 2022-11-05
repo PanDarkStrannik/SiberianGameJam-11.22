@@ -1,5 +1,6 @@
 using System;
 using GameCore;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace GameClient
@@ -7,13 +8,10 @@ namespace GameClient
     [Serializable]
     public sealed class PlayerAnimatorModule : BasePlayerModule
     {
-        [SerializeField] private Animator _animator;
         [SerializeField] private MoveAnimParameters _moveAnim = new MoveAnimParameters();
-
-        public Animator Animator => _animator;
         public MoveAnimParameters MoveAnim => _moveAnim;
 
-        [Serializable]
+        [Serializable, HideReferenceObjectPicker]
         public class MoveAnimParameters
         {
             [SerializeField] private string _upDownParameter;

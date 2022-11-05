@@ -1,20 +1,16 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using GameCore.Patterns;
 using GameCore.Utils;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace GameCore
 {
-    [Serializable]
     public abstract class BasePlayer<T, TV> : MonoSingleton<TV>
         where T : BasePlayer<T, TV>.BasePlayerControllerFabric, new()
         where TV : MonoSingleton<TV>
     {
-        [SerializeReference, ListDrawerSettings(ListElementLabelName = nameof(BasePlayerModule.ModuleName), HideRemoveButton = true)]
-        private List<BasePlayerModule> _modules = new List<BasePlayerModule>();
+        [SerializeField] private PlayerData _playerData;
 
         public IReadOnlyList<IBasePlayerModuleController> Controllers { get; private set; } = new List<IBasePlayerModuleController>();
 
@@ -24,7 +20,7 @@ namespace GameCore
 
         protected sealed override void Initialize()
         {
-            Controllers = _modules.ToHashSet().Select(e => _fabric.Create(e)).ToList();
+            Controllers = _playerData.Modules.ToHashSet().Select(e => _fabric.Create(e)).ToList();
             InternalInitialize();
             _onInitialize.Invoke();
         }

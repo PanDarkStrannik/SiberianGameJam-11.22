@@ -13,8 +13,7 @@ namespace GameCore.GameManager
         where T: BaseGameManager<T, TV>.BaseGameManageControllerFabric, new()
         where TV : BaseGameManager<T,TV>
     {
-        [SerializeReference, ListDrawerSettings(ListElementLabelName = nameof(GameManagerModule.ModuleName), HideRemoveButton = true)]
-        private List<GameManagerModule> _modules = new List<GameManagerModule>();
+        [SerializeField] private GameManagerData _gameManagerData;
 
         private T _fabric = new T();
 
@@ -24,7 +23,7 @@ namespace GameCore.GameManager
 
         protected override void Initialize()
         {
-            Controllers = _modules.ToHashSet().Select(module => _fabric.Create(module)).ToList();
+            Controllers = _gameManagerData.Modules.ToHashSet().Select(module => _fabric.Create(module)).ToList();
             _onInitialize.Invoke();
         }
 
@@ -40,7 +39,7 @@ namespace GameCore.GameManager
             return element;
         }
 
-        public abstract class BaseGameManageControllerFabric : InitializerFabric<IBaseGameManagerModuleController, GameManagerModule>
+        public abstract class BaseGameManageControllerFabric : InitializerFabric<IBaseGameManagerModuleController, BaseGameManagerModule>
         {
         }
     }

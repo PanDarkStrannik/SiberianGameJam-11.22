@@ -1,31 +1,27 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using GameCore.Utils;
 using Sirenix.OdinInspector;
-using Sirenix.Serialization;
+using UnityEngine;
 
 namespace GameCore.Proto
 {
-    [Serializable]
-    public class ProtoData
+    [CreateAssetMenu(fileName = "New ProtoData", menuName = "Balance/ProtoData")]
+    public class ProtoData : SerializedScriptableObject
     {
-        [OdinSerialize, ShowInInspector, ListDrawerSettings(ListElementLabelName = nameof(BaseProtoModule.ModuleName), HideRemoveButton = true)]
+        [SerializeField, OnValueChanged(nameof(OnGameObjectChanged)), AssetsOnly] 
+        private GameObject _gameObject;
+        
+        [SerializeField, ListDrawerSettings(ListElementLabelName = nameof(BaseProtoModule.ModuleName), HideRemoveButton = true)]
         private List<BaseProtoModule> _protoModules = new List<BaseProtoModule>();
 
         public IReadOnlyCollection<BaseProtoModule> ProtoModules => _protoModules.ToHashSet();
 
-        public bool HasModule(Type moduleType)
+        private void OnGameObjectChanged()
         {
-            return _protoModules.HasElement(moduleType);
-        }
-
-        public bool TryGetModule<TProtoModule>(Type moduleType, out TProtoModule module) 
-            where TProtoModule : BaseProtoModule
-        {
-            var hasModule = _protoModules.TryGet(moduleType, out var someModule);
-            module = someModule as TProtoModule;
-            return hasModule;
+            foreach (var module in _protoModules)
+            {
+                module.InitializeByGameObject(_gameObject);
+            }
         }
     }
 }

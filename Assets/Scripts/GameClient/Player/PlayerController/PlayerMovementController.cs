@@ -1,4 +1,6 @@
+using System.Linq;
 using GameCore;
+using GameCore.Utils;
 using UnityEngine;
 
 namespace GameClient
@@ -13,14 +15,14 @@ namespace GameClient
 
         protected override void InternalInitialize()
         {
-            _speed = Data.PlayerSpeed;
-            _body = Data.Body;
-            _playerInstance = Player.Instance;
             _playerInstance.SubscribeOnInitialize(OnPlayerInitialized);
         }
 
         private void OnPlayerInitialized()
         {
+            _playerInstance = Player.Instance;
+            _speed = Data.PlayerSpeed;
+            _body = _playerInstance.gameObject.GetAllComponentsOfType<Rigidbody2D>().First();
             _inputController = _playerInstance.GetController<PlayerInputController>();
             _animator = _playerInstance.GetController<PlayerAnimatorController>();
             _inputController.OnActiveChanged += InputActiveChanged;

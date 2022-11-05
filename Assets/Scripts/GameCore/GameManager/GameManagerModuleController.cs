@@ -3,7 +3,7 @@ using GameCore.Patterns;
 namespace GameCore
 {
     public abstract class BaseGameManagerModuleController<TData> : IDataDriver<TData>, IBaseGameManagerModuleController
-        where TData : GameManagerModule
+        where TData : BaseGameManagerModule
     {
         public TData Data { get; private set; }
         public void Initialize(TData data)
