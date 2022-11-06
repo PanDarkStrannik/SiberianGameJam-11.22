@@ -331,6 +331,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4107289114215657159}
     m_Modifications:
+    - target: {fileID: 3077663989473250311, guid: 763711b2b8a71d1468a37528968f21bc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3535777917923731260, guid: 763711b2b8a71d1468a37528968f21bc, type: 3}
       propertyPath: m_Name
       value: "\u041A\u0430\u043C\u0435\u0440\u0430"
@@ -1646,8 +1650,8 @@ Transform:
   - {fileID: 1128773203874678872}
   - {fileID: 6209044091472401473}
   - {fileID: 7513909952779171913}
-  - {fileID: 1224660380505217692}
   - {fileID: 8081558808044406989}
+  - {fileID: 1224660380505217692}
   - {fileID: 3175014561412180664}
   - {fileID: 2541528886793733118}
   - {fileID: 498125534401540639}
@@ -2536,7 +2540,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4107289114215657159}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &8081558808044406990
 BoxCollider2D:
