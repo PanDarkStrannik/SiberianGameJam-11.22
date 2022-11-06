@@ -12,7 +12,7 @@ namespace GameClient
         public event Action<MissionOwnerData> OnMissionFailed; 
         public event Action OnMissionsChanged;
 
-        private int _taskForWin = 4;
+        private int _taskForWin = 5;
 
         public override void Refresh()
         {
@@ -30,7 +30,7 @@ namespace GameClient
 
         public void MissionFinished(MissionOwnerData owner)
         {
-            if(!_ownersWhoStartMission.ContainsKey(owner))
+            if(owner == null || !_ownersWhoStartMission.ContainsKey(owner))
                 return;
             _ownersWhoStartMission.Remove(owner);
             _ownersWhoMissionsFinished.Add(owner);
@@ -48,6 +48,11 @@ namespace GameClient
             _ownersWhoStartMission.Remove(owner);
             OnMissionFailed?.Invoke(owner);
             OnMissionsChanged?.Invoke();
+        }
+
+        public bool CanEstonianInteract()
+        {
+            return _ownersWhoStartMission.Count > _taskForWin - 1;
         }
 
         public bool IsMissionStarted(MissionOwnerData owner)

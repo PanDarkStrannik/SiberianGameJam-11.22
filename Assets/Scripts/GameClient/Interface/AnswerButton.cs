@@ -12,7 +12,7 @@ namespace GameClient
             _tree = tree;
             _answer = answer;
             var treeForMissionType = tree;
-            var missionType = MissionData.MissionType.None;
+            var missionType = treeForMissionType.StartMission;
             while (treeForMissionType.Answers.Any() && missionType  == MissionData.MissionType.None)
             {
                 treeForMissionType = treeForMissionType.Answers.First();

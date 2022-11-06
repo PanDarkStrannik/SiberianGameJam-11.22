@@ -31,13 +31,14 @@ namespace GameClient
             {
                 if (!_firstInit || levels != LevelSwitchModule.GameLevels.Visa) return;
                 var dialog = Data.Tree;
+                _firstInit = false;
                 StartDialog(dialog, Data.Estonian.NpcName, Data.Estonian.NpcSprite);
             };
         }
 
         public override void Refresh()
         {
-            _firstInit = false;
+            _firstInit = true;
         }
 
         public void StartDialog(MissionOwnerData owner)
@@ -64,7 +65,7 @@ namespace GameClient
                     _gameManager.GetController<MissionsManager>().MissionStart(_missionOwner, _currentDialog.StartMission);
                     EndDialog();
                 }
-                else if (_currentDialog.StartMission == MissionData.MissionType.None)
+                else
                 {
                     EndDialog();
                 }

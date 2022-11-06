@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,8 +6,8 @@ namespace GameClient
     public class UiDialogLir : MonoBehaviour
     {
         [SerializeField] private Image _icon;
-        [SerializeField] private TextMeshProUGUI _text;
-        [SerializeField] private TextMeshProUGUI _name;
+        [SerializeField] private Text _text;
+        [SerializeField] private Text _name;
 
         public void Initialize(Sprite icon, string text, string name = "")
         {

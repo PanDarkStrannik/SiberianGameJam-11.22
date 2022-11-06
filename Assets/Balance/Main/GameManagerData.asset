@@ -823,7 +823,247 @@ MonoBehaviour:
         GameClient]], mscorlib
     - Name: 
       Entry: 12
+      Data: 20
+    - Name: 
+      Entry: 7
+      Data: 42|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
       Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 43|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 44|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 45|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 46|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 47|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 48|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 49|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 50|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 51|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 52|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 53|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 54|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 55|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 56|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 57|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 58|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 59|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 60|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 61|GameClient.PlayerStatModule+StatDamageLir, GameClient
+    - Name: _damageOneTwoAction
+      Entry: 3
+      Data: 0
+    - Name: _damageThreeFourthAction
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 

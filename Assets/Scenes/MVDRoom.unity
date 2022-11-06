@@ -584,9 +584,6 @@ GameObject:
   - component: {fileID: 1587843473}
   - component: {fileID: 1587843479}
   - component: {fileID: 1587843478}
-  - component: {fileID: 1587843477}
-  - component: {fileID: 1587843476}
-  - component: {fileID: 1587843475}
   m_Layer: 0
   m_Name: MVD_Ivan
   m_TagString: Untagged
@@ -687,63 +684,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1587843475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587843471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bb4ebb050625714286d60b1926d8b8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _ownerData: {fileID: 11400000, guid: 5580b35aaa757ab47ae28316a7b1c15b, type: 2}
-  _cameras:
-  - {fileID: 7663155756922348773}
---- !u!114 &1587843476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587843471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3654b203fb788c745ab373ccf0a890a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _ownerData: {fileID: 11400000, guid: 5580b35aaa757ab47ae28316a7b1c15b, type: 2}
-  _needBeatCount: 5
-  _unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1587843471}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1587843477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587843471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf5e76560b77fb94f960864e3a6ac71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _ownerData: {fileID: 11400000, guid: 5580b35aaa757ab47ae28316a7b1c15b, type: 2}
 --- !u!114 &1587843478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1611,7 +1551,6 @@ GameObject:
   - component: {fileID: 1485793102051044132}
   - component: {fileID: 3028952648746802698}
   - component: {fileID: 3028952648746802697}
-  - component: {fileID: 3028952648746802696}
   m_Layer: 0
   m_Name: "\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B_1"
   m_TagString: Untagged
@@ -1722,19 +1661,6 @@ Transform:
   m_Father: {fileID: 127084981775587229}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3028952648746802696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2111430105429515890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0070f7e1d5ff0cb4fb545d6bf254c16f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _ownerData: {fileID: 11400000, guid: 5580b35aaa757ab47ae28316a7b1c15b, type: 2}
 --- !u!50 &3028952648746802697
 Rigidbody2D:
   serializedVersion: 4
@@ -2600,7 +2526,6 @@ GameObject:
   - component: {fileID: 1265058052312668644}
   - component: {fileID: 8297061045753737117}
   - component: {fileID: 8297061045753737116}
-  - component: {fileID: 8297061045753737115}
   m_Layer: 0
   m_Name: "\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B"
   m_TagString: Untagged
@@ -3147,19 +3072,6 @@ Transform:
   m_Father: {fileID: 127084981775587229}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8297061045753737115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6465294375158064515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0070f7e1d5ff0cb4fb545d6bf254c16f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _ownerData: {fileID: 11400000, guid: 5580b35aaa757ab47ae28316a7b1c15b, type: 2}
 --- !u!50 &8297061045753737116
 Rigidbody2D:
   serializedVersion: 4

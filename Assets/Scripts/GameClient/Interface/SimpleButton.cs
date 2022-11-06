@@ -1,5 +1,4 @@
 using System;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,9 +7,9 @@ namespace GameClient
     [RequireComponent(typeof(Button))]
     public class SimpleButton : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI _buttonText;
+        [SerializeField] private Text _buttonText;
 
-        protected TextMeshProUGUI ButtonText => _buttonText;
+        protected Text ButtonText => _buttonText;
         public event Action OnClick;
         private void Awake()
         {

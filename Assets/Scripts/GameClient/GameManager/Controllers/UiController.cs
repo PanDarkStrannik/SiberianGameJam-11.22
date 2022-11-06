@@ -9,6 +9,8 @@ namespace GameClient
     {
         private Canvas _targetCanvas;
 
+        private GameObject _createdWindow;
+
         protected override void InternalInitialize()
         {
             _targetCanvas = GameManager.Instance.TargetCanvas;

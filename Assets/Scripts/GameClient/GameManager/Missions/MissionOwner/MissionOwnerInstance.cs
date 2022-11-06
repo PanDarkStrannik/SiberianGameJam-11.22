@@ -17,6 +17,11 @@ namespace GameClient
 
         protected override void InteractStart()
         {
+            if (_ownerData is EstonianMissionOwner estonian)
+            {
+                GameManager.Instance.GetController<DialogSystemController>().StartDialog(estonian.EstonianDialog, estonian.NpcName, estonian.NpcSprite);
+                return;
+            }
             if (_missionsManager.IsMissionStarted(_ownerData))
                 return;
             GameManager.Instance.GetController<DialogSystemController>().StartDialog(_ownerData);

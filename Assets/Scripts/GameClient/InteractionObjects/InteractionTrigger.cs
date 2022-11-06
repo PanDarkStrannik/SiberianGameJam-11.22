@@ -23,16 +23,22 @@ namespace GameClient
 
         private void OnTriggerEnter2D(Collider2D entered)
         {
+            if (entered?.attachedRigidbody?.gameObject == null)
+                return;
             TriggerEnter(entered.attachedRigidbody.gameObject);
         }
 
         private void OnTriggerStay2D(Collider2D staying)
         {
+            if (staying?.attachedRigidbody?.gameObject == null)
+                return;
             TriggerStay(staying.attachedRigidbody.gameObject);
         }
 
         private void OnTriggerExit2D(Collider2D exit)
         {
+            if (exit?.attachedRigidbody?.gameObject == null)
+                return;
             TriggerExit(exit.attachedRigidbody.gameObject);
         }
 

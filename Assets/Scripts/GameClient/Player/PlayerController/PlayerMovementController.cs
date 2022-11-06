@@ -24,7 +24,6 @@ namespace GameClient
             _speed = Data.PlayerSpeed;
             _body = _playerInstance.gameObject.GetAllComponentsOfType<Rigidbody2D>().First();
             _inputController = _playerInstance.GetController<PlayerInputController>();
-            _animator = _playerInstance.GetController<PlayerAnimatorController>();
             _inputController.OnActiveChanged += InputActiveChanged;
             InputActiveChanged(_inputController.IsActive);
         }
@@ -45,7 +44,6 @@ namespace GameClient
         private void Move(Vector2 direction)
         {
             _body.velocity = direction * _speed;
-            _animator.AnimateMove(_body.velocity);
         }
     }
 }
