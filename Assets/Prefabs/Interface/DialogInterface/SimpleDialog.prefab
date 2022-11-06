@@ -181,6 +181,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3780785448012378260, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780785448012378260, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780785448012378260, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780785448012378260, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780785448012378260, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780785448012378260, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421143115046000809, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421143115046000809, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421143115046000809, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421143115046000809, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421143115046000809, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421143115046000809, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8615802108711230103, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
       propertyPath: m_Name
       value: DialogPanel

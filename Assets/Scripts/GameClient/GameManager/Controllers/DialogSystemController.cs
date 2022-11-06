@@ -54,6 +54,11 @@ namespace GameClient
             }
             else
             {
+                if (_currentDialog.Answers.Count == 1)
+                {
+                    ChooseInDialog(_currentDialog.Answers.First());
+                    return;
+                }
                 _uiController.ShowDialogWithAnswers(_currentDialog, Data.PlayerIcon, ChooseInDialog, _npcName, _npcIcon);
             }
                 

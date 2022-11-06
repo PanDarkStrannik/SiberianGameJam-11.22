@@ -1,21 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 namespace GameClient
 {
-    public class AnswerButton : MonoBehaviour
+    public class AnswerButton : SimpleButton
     {
-        // Start is called before the first frame update
-        void Start()
+        private Action<DialogTree> _answer;
+        private DialogTree _tree;
+        public void Initialize(DialogTree tree, Action<DialogTree> answer)
         {
-        
+            _tree = tree;
+            _answer = answer;
+            var missionData = _tree.StartMission;
+            
         }
 
-        // Update is called once per frame
-        void Update()
+        protected override void InternalButtonClick()
         {
-        
+            base.InternalButtonClick();
+            _answer.Invoke(_tree);
         }
     }
 }
