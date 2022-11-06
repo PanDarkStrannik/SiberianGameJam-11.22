@@ -25,8 +25,8 @@ MonoBehaviour:
       Entry: 7
       Data: 0|GameClient.DialogTree, GameClient
     - Name: _dialogName
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u041F\u0440\u0438\u0432"
     - Name: _dialog
       Entry: 7
       Data: 1|GameClient.DialogData, GameClient
@@ -34,8 +34,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: _playerSay
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u0417\u0434\u0440\u0430\u0441\u044C\u0442\u0435, \u043C\u044B \u0431\u044B
+        \u0441\u043F\u0440\u0430\u0432\u043A\u0443 \u043E \u0434\u043E\u0445\u043E\u0434\u0430\u0445."
     - Name: 
       Entry: 8
       Data: 
@@ -48,87 +49,101 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
     - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _missions
       Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[GameClient.MissionData, GameClient]],
+      Data: 3|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: "\u041F\u0440\u0438\u04322"
+    - Name: _dialog
+      Entry: 7
+      Data: 4|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 1
+      Data: "\u041F\u043E\u0442\u043E\u043B\u043E\u043A \u043F\u043E\u043A\u0440\u0430\u0441\u044C\u0442\u0435.
+        \u0412\u043E\u0437\u044C\u043C\u0438\u0442\u0435 \u0442\u0430\u043B\u043E\u043D\u0447\u0438\u043A
+        \u0438 \u0436\u0434\u0438\u0442\u0435 \u0441\u0432\u043E\u0435\u0439 \u043E\u0447\u0435\u0440\u0435\u0434\u0438. "
+    - Name: _playerSay
+      Entry: 1
+      Data: "\u0422\u0430\u043A \u0442\u0443\u0442 \u0436\u0435 \u0432\u0441\u0435\u0433\u043E
+        3 \u0431\u0430\u0431\u043A\u0438... "
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 6|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: "\u041F\u0440\u0438\u04323"
+    - Name: _dialog
+      Entry: 7
+      Data: 7|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 1
+      Data: "\u0418 \u0447\u0442\u043E? \u0412\u044B \u0434\u0443\u043C\u0430\u0435\u0442\u0435,
+        \u044D\u0442\u043E \u0431\u044B\u0441\u0442\u0440\u043E? \u0412\u043E\u0437\u044C\u043C\u0438\u0442\u0435
+        \u0442\u0430\u043B\u043E\u043D\u0447\u0438\u043A, \u043F\u043E\u0433\u0443\u043B\u044F\u0439\u0442\u0435
+        \u0434\u043E \u0432\u0435\u0447\u0435\u0440\u0430, \u043D\u0443 \u0438\u043B\u0438
+        \u0432\u0435\u0434\u044C\u043C\u0430\u043A\u0430 \u0442\u0440\u0435\u0442\u044C\u0435\u0433\u043E
+        \u043F\u0440\u043E\u0439\u0434\u0438\u0442\u0435 \u0446\u0435\u043B\u0438\u043A\u043E\u043C,
+        \u044F \u043D\u0435 \u0437\u043D\u0430\u044E."
+    - Name: _playerSay
+      Entry: 1
+      Data: "*\u041D\u0443 \u0434\u0430, \u0442\u0440\u0438 \u0431\u0430\u0431\u043A\u0438
+        \u0432 \u0431\u0430\u043D\u043A\u0435 - \u044D\u0442\u043E \u0441\u0435\u0440\u044C\u0435\u0437\u043D\u043E*"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 4
     - Name: 
       Entry: 7
-      Data: 4|GameClient.AgreeMissionData, GameClient
-    - Name: _dialogOnMissionPassed
-      Entry: 7
-      Data: 5|GameClient.DialogTree, GameClient
+      Data: 9|GameClient.DialogTree, GameClient
     - Name: _dialogName
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u0421\u043E\u0433\u043B\u0430\u0441\u0438\u0435"
     - Name: _dialog
       Entry: 7
-      Data: 6|GameClient.DialogData, GameClient
+      Data: 10|GameClient.DialogData, GameClient
     - Name: _npcSay
       Entry: 6
       Data: 
     - Name: _playerSay
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u0422\u0430\u043B\u043E\u043D\u0447\u0438\u043A \u0442\u0430\u043A
+        \u0442\u0430\u043B\u043E\u043D\u0447\u0438\u043A, \u043F\u0440\u043E\u0433\u0443\u043B\u043A\u0430
+        \u0442\u0430\u043A \u043F\u0440\u043E\u0433\u0443\u043B\u043A\u0430... \u041A\u0430\u043A
+        \u0440\u0430\u0437 \u043D\u0435\u0434\u0435\u043B\u044E \u0438\u0437 \u0434\u043E\u043C\u0430
+        \u043D\u0435 \u0432\u044B\u0445\u043E\u0434\u0438\u043B."
     - Name: 
       Entry: 8
       Data: 
     - Name: _startMission
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: _answers
       Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _dialogOnMissionFailed
-      Entry: 7
-      Data: 8|GameClient.DialogTree, GameClient
-    - Name: _dialogName
-      Entry: 6
-      Data: 
-    - Name: _dialog
-      Entry: 7
-      Data: 9|GameClient.DialogData, GameClient
-    - Name: _npcSay
-      Entry: 6
-      Data: 
-    - Name: _playerSay
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _startMission
-      Entry: 3
-      Data: 0
-    - Name: _answers
-      Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+      Data: 11|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
         mscorlib
     - Name: 
       Entry: 12
@@ -143,17 +158,11 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 11|GameClient.BeatMissionData, GameClient
-    - Name: _dialogOnMissionPassed
       Entry: 7
       Data: 12|GameClient.DialogTree, GameClient
     - Name: _dialogName
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u041F\u043E\u0434\u043A\u0443\u043F"
     - Name: _dialog
       Entry: 7
       Data: 13|GameClient.DialogData, GameClient
@@ -161,8 +170,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: _playerSay
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u041A\u0441\u0435\u043D\u0438\u044F... \u0412\u044B \u0447\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C
+        \u0441\u043B\u044B\u0448\u0430\u043B\u0438 \u043E\u0431 \u0430\u0439\u0442\u0438\u0448\u043D\u0438\u043A\u0430\u0445?"
     - Name: 
       Entry: 8
       Data: 
@@ -175,31 +185,29 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
     - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _dialogOnMissionFailed
       Entry: 7
       Data: 15|GameClient.DialogTree, GameClient
     - Name: _dialogName
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u041F\u043E\u0434\u043A\u0443\u043F2"
     - Name: _dialog
       Entry: 7
       Data: 16|GameClient.DialogData, GameClient
     - Name: _npcSay
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u0412\u044B \u044D\u0442\u043E \u043A \u0447\u0435\u043C\u0443?"
     - Name: _playerSay
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u0415\u0441\u043B\u0438 \u0431\u044B \u0432\u044B \u0432\u044B\u043F\u0438\u0441\u0430\u043B\u0438
+        \u043C\u043D\u0435 \u0441\u043F\u0440\u0430\u0432\u043A\u0443 \u043E \u0434\u043E\u0445\u043E\u0434\u0430\u0445
+        \u0432\u043D\u0435 \u043E\u0447\u0435\u0440\u0435\u0434\u0438, \u0432\u044B
+        \u0431\u044B\u043B\u0438 \u0431\u044B \u043F\u0440\u0438\u044F\u0442\u043D\u043E
+        \u0443\u0434\u0438\u0432\u043B\u0435\u043D\u044B \u0438\u0445 \u0440\u0430\u0437\u043C\u0435\u0440\u0430\u043C\u0438.
+        \u0418 \u0447\u0430\u0441\u0442\u044C \u0438\u0437 \u043D\u0438\u0445 \u043C\u043E\u0433\u043B\u0430
+        \u0431\u044B \u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F \u043F\u0440\u044F\u043C\u043E
+        \u0441\u0435\u0439\u0447\u0430\u0441 \u0443 \u0432\u0430\u0441 \u0432 \u043A\u0430\u0440\u043C\u0430\u043D\u0435."
     - Name: 
       Entry: 8
       Data: 
@@ -212,6 +220,36 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 18|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: "\u041F\u043E\u0434\u043A\u0443\u043F3"
+    - Name: _dialog
+      Entry: 7
+      Data: 19|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 1
+      Data: "\u0417\u0432\u0443\u0447\u0438\u0442 \u0437\u0430\u043C\u0430\u043D\u0447\u0438\u0432\u043E.
+        \u0422\u043E\u043B\u044C\u043A\u043E \u0443\u043C\u043E\u043B\u044F\u044E,
+        \u043D\u0435 \u043F\u043E\u0434 \u043A\u0430\u043C\u0435\u0440\u043E\u0439!"
+    - Name: _playerSay
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 4
+    - Name: _answers
+      Entry: 7
+      Data: 20|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
       Data: 0
     - Name: 
       Entry: 13
@@ -223,143 +261,162 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 18|GameClient.BribeMissionData, GameClient
+      Data: 21|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: "\u0412\u0437\u043B\u043E\u043C"
+    - Name: _dialog
+      Entry: 7
+      Data: 22|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 6
+      Data: 
+    - Name: _playerSay
+      Entry: 1
+      Data: "*\u0410 \u0447\u0442\u043E \u0435\u0441\u043B\u0438 \u0441\u043B\u043E\u043C\u0430\u0442\u044C
+        \u0441\u0438\u0441\u0442\u0435\u043C\u0443 \u0438 \u0430\u0432\u0442\u043E\u043C\u0430\u0442
+        \u0441 \u0442\u0430\u043B\u043E\u043D\u0447\u0438\u043A\u0430\u043C\u0438
+        \u0437\u0430\u043E\u0434\u043D\u043E? \u041F\u0440\u043E\u0439\u0434\u0443
+        \u043F\u0435\u0440\u0435\u0434 \u0431\u0430\u0431\u043A\u0430\u043C\u0438
+        \u0438 \u0434\u0435\u043B\u043E \u0441 \u043A\u043E\u043D\u0446\u043E\u043C.*"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 3
+    - Name: _answers
+      Entry: 7
+      Data: 23|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 24|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: "\u041E\u0442\u043F\u0438\u0437\u0434\u0438\u0442\u044C"
+    - Name: _dialog
+      Entry: 7
+      Data: 25|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 6
+      Data: 
+    - Name: _playerSay
+      Entry: 1
+      Data: "*\u0410 \u0447\u0442\u043E \u0435\u0441\u043B\u0438... \u041E\u0442\u043E\u0431\u0440\u0430\u0442\u044C
+        \u0442\u0430\u043B\u043E\u043D\u0447\u0438\u043A \u0443 \u0431\u0430\u0431\u0443\u0448\u043A\u0438?
+        \u0415\u0435 \u0436\u0435 \u043D\u0435 \u043C\u043E\u0431\u0438\u043B\u0438\u0437\u0443\u044E\u0442.
+        \u041C\u043D\u0435 \u043D\u0443\u0436\u043D\u0435\u0435! \u0418 \u0434\u0430
+        \u043F\u0440\u043E\u0441\u0442\u044F\u0442 \u043C\u0435\u043D\u044F \u0434\u0440\u0435\u0432\u043D\u0438\u0435
+        \u0431\u043E\u0433\u0438.*"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 2
+    - Name: _answers
+      Entry: 7
+      Data: 26|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _missions
+      Entry: 7
+      Data: 27|System.Collections.Generic.List`1[[GameClient.MissionData, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 28|GameClient.AgreeMissionData, GameClient
     - Name: _dialogOnMissionPassed
-      Entry: 7
-      Data: 19|GameClient.DialogTree, GameClient
-    - Name: _dialogName
-      Entry: 6
-      Data: 
-    - Name: _dialog
-      Entry: 7
-      Data: 20|GameClient.DialogData, GameClient
-    - Name: _npcSay
-      Entry: 6
-      Data: 
-    - Name: _playerSay
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _startMission
-      Entry: 3
-      Data: 0
-    - Name: _answers
-      Entry: 7
-      Data: 21|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _dialogOnMissionFailed
-      Entry: 7
-      Data: 22|GameClient.DialogTree, GameClient
-    - Name: _dialogName
-      Entry: 6
-      Data: 
-    - Name: _dialog
-      Entry: 7
-      Data: 23|GameClient.DialogData, GameClient
-    - Name: _npcSay
-      Entry: 6
-      Data: 
-    - Name: _playerSay
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _startMission
-      Entry: 3
-      Data: 0
-    - Name: _answers
-      Entry: 7
-      Data: 24|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 25|GameClient.HackMissionData, GameClient
-    - Name: _dialogOnMissionPassed
-      Entry: 7
-      Data: 26|GameClient.DialogTree, GameClient
-    - Name: _dialogName
-      Entry: 6
-      Data: 
-    - Name: _dialog
-      Entry: 7
-      Data: 27|GameClient.DialogData, GameClient
-    - Name: _npcSay
-      Entry: 6
-      Data: 
-    - Name: _playerSay
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _startMission
-      Entry: 3
-      Data: 0
-    - Name: _answers
-      Entry: 7
-      Data: 28|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _dialogOnMissionFailed
       Entry: 7
       Data: 29|GameClient.DialogTree, GameClient
     - Name: _dialogName
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: 1
     - Name: _dialog
       Entry: 7
       Data: 30|GameClient.DialogData, GameClient
     - Name: _npcSay
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u0422\u0430\u043A \u0447\u0442\u043E \u0442\u0430\u043C \u0443 \u0432\u0430\u0441?
+        \u0421\u043F\u0440\u0430\u0432\u043A\u0430 \u043E \u0434\u043E\u0445\u043E\u0434\u0430\u0445?
+        \u0410 \u043E\u043D\u0438 \u0443 \u0432\u0430\u0441 \u0432\u043E\u043E\u0431\u0449\u0435
+        \u0435\u0441\u0442\u044C?"
     - Name: _playerSay
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u041D\u0443 \u0432\u043E\u043E\u0431\u0449\u0435 \u044F \u0430\u0439\u0442\u0438\u0448\u043D\u0438\u043A..."
     - Name: 
       Entry: 8
       Data: 
@@ -369,6 +426,390 @@ MonoBehaviour:
     - Name: _answers
       Entry: 7
       Data: 31|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 32|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: 2
+    - Name: _dialog
+      Entry: 7
+      Data: 33|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 1
+      Data: "\u0410... \u041E\u043E\u043E! \u041A\u0445\u043C. \u0414\u0435\u0440\u0436\u0438\u0442\u0435
+        \u0432\u0430\u0448\u0443 \u0441\u043F\u0440\u0430\u0432\u043E\u0447\u043A\u0443.
+        \u0418 \u043C\u043E\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0447\u0438\u043A
+        \u0437\u0430\u043E\u0434\u043D\u043E. \u041F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0435
+        \u0435\u0449\u0435!"
+    - Name: _playerSay
+      Entry: 1
+      Data: "\u0422\u0430\u043A \u0414\u0430\u043D\u0442\u0435 \u0438 \u043F\u043E\u043A\u0438\u043D\u0443\u043B
+        \u0432\u0442\u043E\u0440\u043E\u0439 \u043A\u0440\u0443\u0433 \u0430\u0434\u0430..."
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 34|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _dialogOnMissionFailed
+      Entry: 7
+      Data: 35|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 6
+      Data: 
+    - Name: _dialog
+      Entry: 7
+      Data: 36|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 6
+      Data: 
+    - Name: _playerSay
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 37|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 38|GameClient.BeatMissionData, GameClient
+    - Name: _dialogOnMissionPassed
+      Entry: 7
+      Data: 39|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: 1
+    - Name: _dialog
+      Entry: 7
+      Data: 40|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 6
+      Data: 
+    - Name: _playerSay
+      Entry: 1
+      Data: "\u0410 \u0432\u043E\u0442 \u0438 \u0442\u0430\u043B\u043E\u043D\u0447\u0438\u043A
+        \u043F\u043E\u0434\u044A\u0435\u0445\u0430\u043B!"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 41|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 42|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: 2
+    - Name: _dialog
+      Entry: 7
+      Data: 43|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 1
+      Data: "\u0412\u044B \u0436\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u043E
+        \u0432\u043E\u0448\u043B\u0438. \u0422\u043E\u0447\u043D\u043E \u0441\u0434\u0435\u043B\u0430\u043B\u0438
+        \u0447\u0442\u043E-\u0442\u043E \u043D\u0438\u0437\u043A\u043E\u0435. \u0414\u0435\u0440\u0436\u0438\u0442\u0435
+        \u0432\u0430\u0448\u0443 \u0441\u043F\u0440\u0430\u0432\u043E\u0447\u043A\u0443,
+        \u0432\u0435\u043B\u0438\u043A\u0438\u0439 \u0443\u043D\u0438\u0436\u0430\u0442\u043E\u0440
+        \u043D\u0435\u043C\u043E\u0449\u043D\u044B\u0445."
+    - Name: _playerSay
+      Entry: 1
+      Data: "\u041D\u0443 \u0437\u043D\u0430\u0435\u0442\u0435... \"\u0412\u0440\u0435\u043C\u044F,
+        \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u0443 \u043D\u0430\u0441 \u0435\u0441\u0442\u044C,
+        \u2014 \u044D\u0442\u043E \u0434\u0435\u043D\u044C\u0433\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0445
+        \u0443 \u043D\u0430\u0441 \u043D\u0435\u0442.\". \u0417\u0430 \u0441\u043F\u0440\u0430\u0432\u043E\u0447\u043A\u0443
+        \u0441\u043F\u0430\u0441\u0438\u0431\u043E \u0438 \u0434\u043E \u0441\u0432\u0438\u0434\u0430\u043D\u0438\u044F."
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 44|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _dialogOnMissionFailed
+      Entry: 7
+      Data: 45|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 6
+      Data: 
+    - Name: _dialog
+      Entry: 7
+      Data: 46|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 6
+      Data: 
+    - Name: _playerSay
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 47|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 48|GameClient.BribeMissionData, GameClient
+    - Name: _dialogOnMissionPassed
+      Entry: 7
+      Data: 49|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: 1
+    - Name: _dialog
+      Entry: 7
+      Data: 50|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 1
+      Data: "\u0414\u0435\u0440\u0436\u0438\u0442\u0435 \u0432\u0430\u0448\u0443
+        \u0441\u043F\u0440\u0430\u0432\u043E\u0447\u043A\u0443. \u0418 \u043C\u043E\u0439
+        \u043D\u043E\u043C\u0435\u0440\u043E\u043A \u0437\u0430\u043E\u0434\u043D\u043E.
+        \u041F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0435 \u0435\u0449\u0435!"
+    - Name: _playerSay
+      Entry: 1
+      Data: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u043D\u043E \u043C\u043D\u0435
+        \u043F\u043E\u043A\u0430 \u043D\u0435 \u043D\u0443\u0436\u043D\u0430 \u0441\u043F\u0440\u0430\u0432\u043A\u0430
+        \u043E \u0440\u0430\u0441\u0445\u043E\u0434\u0430\u0445..."
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 51|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _dialogOnMissionFailed
+      Entry: 7
+      Data: 52|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: 1
+    - Name: _dialog
+      Entry: 7
+      Data: 53|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 1
+      Data: "\u0427\u0442\u043E \u0436\u0435 \u0432\u044B \u0442\u0432\u043E\u0440\u0438\u0442\u0435
+        \u0441\u0440\u0435\u0434\u044C \u0431\u0435\u043B\u0430 \u0434\u043D\u044F? 
+        \u041C\u0435\u043D\u044F \u0435\u0449\u0435 \u043D\u0438\u043A\u0442\u043E
+        \u0442\u0430\u043A \u043D\u0435 \u043A\u043E\u043C\u043F\u0440\u043E\u043C\u0435\u0442\u0438\u0440\u043E\u0432\u0430\u043B,
+        \u0438 \u0443 \u0432\u0430\u0441 \u043D\u0435 \u0432\u044B\u0439\u0434\u0435\u0442!"
+    - Name: _playerSay
+      Entry: 1
+      Data: "\u0414\u0430 \u044F \u0438 \u043D\u0435 \u043F\u044B\u0442\u0430\u043B\u0441\u044F,
+        \u0432\u0430\u043C \u043F\u043E\u043A\u0430\u0437\u0430\u043B\u043E\u0441\u044C!"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 54|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 55|GameClient.HackMissionData, GameClient
+    - Name: _dialogOnMissionPassed
+      Entry: 7
+      Data: 56|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 1
+      Data: 1
+    - Name: _dialog
+      Entry: 7
+      Data: 57|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 1
+      Data: "\u0412\u044B \u0436\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u043E
+        \u0432\u043E\u0448\u043B\u0438. \u0422\u043E\u0447\u043D\u043E \u0441\u0434\u0435\u043B\u0430\u043B\u0438
+        \u0447\u0442\u043E-\u0442\u043E \u043D\u0438\u0437\u043A\u043E\u0435. \u0414\u0435\u0440\u0436\u0438\u0442\u0435
+        \u0432\u0430\u0448\u0443 \u0441\u043F\u0440\u0430\u0432\u043E\u0447\u043A\u0443,
+        \u0432\u0435\u043B\u0438\u043A\u0438\u0439 \u043A\u043E\u043C\u0431\u0438\u043D\u0430\u0442\u043E\u0440.\r\n"
+    - Name: _playerSay
+      Entry: 1
+      Data: "\u041D\u0443 \u0437\u043D\u0430\u0435\u0442\u0435... \"\u0412\u0440\u0435\u043C\u044F,
+        \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u0443 \u043D\u0430\u0441 \u0435\u0441\u0442\u044C,
+        \u2014 \u044D\u0442\u043E \u0434\u0435\u043D\u044C\u0433\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0445
+        \u0443 \u043D\u0430\u0441 \u043D\u0435\u0442.\". \u0417\u0430 \u0441\u043F\u0440\u0430\u0432\u043E\u0447\u043A\u0443
+        \u0441\u043F\u0430\u0441\u0438\u0431\u043E \u0438 \u0434\u043E \u0441\u0432\u0438\u0434\u0430\u043D\u0438\u044F."
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 58|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _dialogOnMissionFailed
+      Entry: 7
+      Data: 59|GameClient.DialogTree, GameClient
+    - Name: _dialogName
+      Entry: 6
+      Data: 
+    - Name: _dialog
+      Entry: 7
+      Data: 60|GameClient.DialogData, GameClient
+    - Name: _npcSay
+      Entry: 6
+      Data: 
+    - Name: _playerSay
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _startMission
+      Entry: 3
+      Data: 0
+    - Name: _answers
+      Entry: 7
+      Data: 61|System.Collections.Generic.List`1[[GameClient.DialogTree, GameClient]],
         mscorlib
     - Name: 
       Entry: 12
@@ -383,8 +824,8 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: _code
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: 10011
     - Name: 
       Entry: 8
       Data: 
@@ -394,5 +835,5 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  _npcSprite: {fileID: 0}
-  _npcName: 
+  _npcSprite: {fileID: 21300000, guid: d38dba139a441b14cbdf03effc212846, type: 3}
+  _npcName: "\u041A\u0441\u0435\u043D\u0438\u044F"
