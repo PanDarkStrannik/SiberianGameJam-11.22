@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sirenix.OdinInspector;
@@ -9,16 +10,14 @@ namespace GameClient
     public class DialogTree
     {
         [SerializeField] private string _dialogName;
-        [SerializeField] private string _npcSay;
-        [SerializeField] private string _playerSay;
+        [SerializeField, HideLabel] private DialogData _dialog = new DialogData();
         [SerializeField, HideIf(nameof(AnswersExist))]
         private MissionData.MissionType _startMission;
 
         [SerializeField, ListDrawerSettings(ListElementLabelName = nameof(_dialogName))] 
         private List<DialogTree> _answers = new List<DialogTree>();
 
-        public string NpcSay => _npcSay;
-        public string PlayerSay => _playerSay;
+        public DialogData Dialog => _dialog;
 
         public MissionData.MissionType StartMission => AnswersExist() ? MissionData.MissionType.None : _startMission;
 
@@ -28,5 +27,15 @@ namespace GameClient
         {
             return _answers.Any();
         }
+    }
+
+    [Serializable, HideReferenceObjectPicker]
+    public class DialogData
+    {
+        [SerializeField] private string _npcSay;
+        [SerializeField] private string _playerSay;
+
+        public string NpcSay => _npcSay;
+        public string PlayerSay => _playerSay;
     }
 }

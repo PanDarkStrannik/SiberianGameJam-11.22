@@ -17,13 +17,17 @@ namespace GameCore
             Initialize(data as TData);
         }
 
+        public virtual void Refresh()
+        {
+        }
+
         protected virtual void InternalInitialize()
         {
-
         }
     }
 
     public interface IBaseGameManagerModuleController : IFabricCreated
     {
+        public void Refresh();
     }
 }

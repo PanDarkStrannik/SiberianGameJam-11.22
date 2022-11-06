@@ -1,0 +1,396 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47782cd71539ee4d96460a9a877d0b5, type: 3}
+  m_Name: GameManagerData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 2b059c14da433bb49b0517e0522b281b, type: 3}
+    - {fileID: 8300000, guid: 9f013985df318b243a39628474704fbb, type: 3}
+    - {fileID: 8300000, guid: 96442decca0a5a54a810f0e3d21fd20c, type: 3}
+    - {fileID: 8300000, guid: 0d0574377a008c3488aeabac65ad3d79, type: 3}
+    - {fileID: 8300000, guid: 33dff08c37f18ba4ea99ad3db3cfe7c9, type: 3}
+    - {fileID: 8300000, guid: 4c2a057656dc9f349b5deedc88fb1973, type: 3}
+    - {fileID: 8300000, guid: 8159ab8896c3e14438b624e476211637, type: 3}
+    - {fileID: 8300000, guid: 11e4ad1c3dcf0cd4eb5d9f14b1c7c1c6, type: 3}
+    - {fileID: 8641469551211365067, guid: 58265845f7de8ba4eaa1bb27f7efc253, type: 3}
+    - {fileID: 6485148414845838893, guid: 6a8796976d19a2b4e8c9be3859c413df, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _modules
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[GameCore.BaseGameManagerModule,
+        GameCore]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: 1|GameClient.GameEndModule, GameClient
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|GameClient.MissionManagerData, GameClient
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|GameClient.LevelSwitchModule, GameClient
+    - Name: _buildIdLevelPair
+      Entry: 7
+      Data: 4|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[GameClient.LevelSwitchModule+GameLevels,
+        GameClient]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 5|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 3
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 3
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 7
+    - Name: $v
+      Entry: 3
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _buildIdUiLevelPair
+      Entry: 7
+      Data: 6|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[GameClient.LevelSwitchModule+UiLevels,
+        GameClient]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 5
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 7|GameClient.MusicModule, GameClient
+    - Name: _levelSoundPair
+      Entry: 7
+      Data: 8|System.Collections.Generic.Dictionary`2[[GameClient.LevelSwitchModule+GameLevels,
+        GameClient],[GameClient.MusicModule+LevelMusicData, GameClient]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 9|System.Collections.Generic.EnumEqualityComparer`1[[GameClient.LevelSwitchModule+GameLevels,
+        GameClient]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 10|GameClient.MusicModule+LevelMusicData, GameClient
+    - Name: _playOnShot
+      Entry: 6
+      Data: 
+    - Name: _loopedAudio
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 11|GameClient.MusicModule+LevelMusicData, GameClient
+    - Name: _playOnShot
+      Entry: 6
+      Data: 
+    - Name: _loopedAudio
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 12|GameClient.MusicModule+LevelMusicData, GameClient
+    - Name: _playOnShot
+      Entry: 10
+      Data: 2
+    - Name: _loopedAudio
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 13|GameClient.MusicModule+LevelMusicData, GameClient
+    - Name: _playOnShot
+      Entry: 6
+      Data: 
+    - Name: _loopedAudio
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 14|GameClient.MusicModule+LevelMusicData, GameClient
+    - Name: _playOnShot
+      Entry: 6
+      Data: 
+    - Name: _loopedAudio
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 15|GameClient.MusicModule+LevelMusicData, GameClient
+    - Name: _playOnShot
+      Entry: 6
+      Data: 
+    - Name: _loopedAudio
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 16|GameClient.MusicModule+LevelMusicData, GameClient
+    - Name: _playOnShot
+      Entry: 6
+      Data: 
+    - Name: _loopedAudio
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 17|GameClient.TimerModule, GameClient
+    - Name: _timeToEndSec
+      Entry: 3
+      Data: 0
+    - Name: _timeStepMs
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 18|GameClient.DialogSystemModule, GameClient
+    - Name: _playerIcon
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 19|GameClient.UiModule, GameClient
+    - Name: _dialog
+      Entry: 10
+      Data: 8
+    - Name: _dialogWithAnswers
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
