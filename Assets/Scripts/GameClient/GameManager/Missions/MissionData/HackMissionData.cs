@@ -4,7 +4,8 @@ namespace GameClient
 {
     public class HackMissionData : MissionData
     {
-        [SerializeField] private string _paperText;
+        [SerializeField, TextArea]
+        private string _paperText;
         [SerializeField] private string _code;
 
         public string PaperText => _paperText;
