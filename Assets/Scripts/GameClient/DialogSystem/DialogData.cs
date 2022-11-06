@@ -32,8 +32,8 @@ namespace GameClient
     [Serializable, HideReferenceObjectPicker]
     public class DialogData
     {
-        [SerializeField] private string _npcSay;
-        [SerializeField] private string _playerSay;
+        [SerializeField, TextArea] private string _npcSay;
+        [SerializeField, TextArea] private string _playerSay;
 
         public string NpcSay => _npcSay;
         public string PlayerSay => _playerSay;

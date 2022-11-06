@@ -17,7 +17,7 @@ namespace GameClient
         [SerializeField, HideLabel, TabGroup("MainDialog")]
         private DialogTree _mainDialog = new DialogTree();
 
-        [SerializeField, HideLabel, TabGroup("Missions")]
+        [SerializeField, TabGroup("Missions"), ListDrawerSettings(HideRemoveButton = true,HideAddButton = true,ListElementLabelName = nameof(MissionData.MissionUid))]
         private List<MissionData> _missions = new List<MissionData>
         {
             new AgreeMissionData(),
