@@ -8,7 +8,7 @@ namespace GameClient
         {
             if (Missions.IsMissionStarted(OwnerData))
             {
-                Missions.OnMissionFinished(OwnerData);
+                Missions.MissionFinished(OwnerData);
                 return;
             }
             base.TryFinish();

@@ -13,6 +13,9 @@ namespace GameClient
         [SerializeField, HideIf(nameof(CanNotFailed))] 
         private DialogTree _dialogOnMissionFailed = new DialogTree();
 
+        public DialogTree DialogOnMissionPassed => _dialogOnMissionPassed;
+        public DialogTree DialogOnMissionFailed => _dialogOnMissionFailed;
+
         public abstract bool CanNotFailed { get; }
         public abstract MissionType MissionUid { get; }
 

@@ -14,6 +14,11 @@ namespace GameClient
             _targetCanvas = GameManager.Instance.TargetCanvas;
         }
 
+        public void ShowHackGame(HackMissionData hackMission, Action onGameFinished)
+        {
+
+        }
+
         public void ShowDialog(DialogData dialog, Sprite playerDialogIcon, Action onDialogContinue, string npcName = "", Sprite npcIcon = null)
         {
             CreateWindow(Data.Dialog);

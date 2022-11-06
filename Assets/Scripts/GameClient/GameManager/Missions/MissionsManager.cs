@@ -9,6 +9,7 @@ namespace GameClient
         private readonly Dictionary<MissionOwnerData, MissionData.MissionType> _ownersWhoStartMission = new Dictionary<MissionOwnerData, MissionData.MissionType>();
         private readonly List<MissionOwnerData> _ownersWhoMissionsFinished = new List<MissionOwnerData>();
 
+        public event Action<MissionOwnerData> OnMissionFailed; 
         public event Action OnMissionsChanged;
 
         public override void Refresh()
@@ -17,7 +18,7 @@ namespace GameClient
             _ownersWhoMissionsFinished.Clear();
         }
 
-        public void OnMissionStart(MissionOwnerData owner, MissionData.MissionType missionType)
+        public void MissionStart(MissionOwnerData owner, MissionData.MissionType missionType)
         {
             if (_ownersWhoStartMission.ContainsKey(owner) || _ownersWhoMissionsFinished.Contains(owner))
                 return;
@@ -25,7 +26,7 @@ namespace GameClient
             OnMissionsChanged?.Invoke();
         }
 
-        public void OnMissionFinished(MissionOwnerData owner)
+        public void MissionFinished(MissionOwnerData owner)
         {
             if(!_ownersWhoStartMission.ContainsKey(owner))
                 return;
@@ -35,11 +36,12 @@ namespace GameClient
             OnMissionsChanged?.Invoke();
         }
 
-        public void OnMissionFailed(MissionOwnerData owner)
+        public void MissionFailed(MissionOwnerData owner)
         {
             if (!_ownersWhoStartMission.ContainsKey(owner))
                 return;
             _ownersWhoStartMission.Remove(owner);
+            OnMissionFailed?.Invoke(owner);
             OnMissionsChanged?.Invoke();
         }
 

@@ -44,7 +44,7 @@ namespace GameClient
             {
                 if (_currentDialog.StartMission != MissionData.MissionType.None && _missionOwner != null)
                 {
-                    _gameManager.GetController<MissionsManager>().OnMissionStart(_missionOwner, _currentDialog.StartMission);
+                    _gameManager.GetController<MissionsManager>().MissionStart(_missionOwner, _currentDialog.StartMission);
                     EndDialog();
                 }
                 else if (_currentDialog.StartMission == MissionData.MissionType.None)

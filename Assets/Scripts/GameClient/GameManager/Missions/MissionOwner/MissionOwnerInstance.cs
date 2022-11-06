@@ -17,6 +17,8 @@ namespace GameClient
 
         protected override void InteractStart()
         {
+            if (_missionsManager.IsMissionStarted(_ownerData))
+                return;
             GameManager.Instance.GetController<DialogSystemController>().StartDialog(_ownerData);
         }
 
