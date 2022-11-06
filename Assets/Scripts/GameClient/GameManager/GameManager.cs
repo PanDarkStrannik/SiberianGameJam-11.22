@@ -19,6 +19,11 @@ namespace GameClient
             }
         }
 
+        private void Start()
+        {
+            GameManagerGameStart();
+        }
+
         public void GameManagerGameStart()
         {
             var levelController = GetController<LevelSwitchController>();

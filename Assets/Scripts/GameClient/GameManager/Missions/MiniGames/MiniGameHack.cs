@@ -7,8 +7,7 @@ namespace GameClient
         protected override void InteractStart()
         {
             base.InteractStart();
-            var missionData = GetMissionData();
-            GameManager.Instance.GetController<UiController>().ShowHackGame(missionData as HackMissionData, FinishGame);
+            FinishGame();
         }
 
         private void FinishGame()

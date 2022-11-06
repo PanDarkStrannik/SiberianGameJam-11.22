@@ -12,6 +12,8 @@ namespace GameClient
         public event Action<MissionOwnerData> OnMissionFailed; 
         public event Action OnMissionsChanged;
 
+        private int _taskForWin = 4;
+
         public override void Refresh()
         {
             _ownersWhoStartMission.Clear();
@@ -34,6 +36,9 @@ namespace GameClient
             _ownersWhoMissionsFinished.Add(owner);
             
             OnMissionsChanged?.Invoke();
+
+            if (_ownersWhoMissionsFinished.Count > _taskForWin)
+                GameManager.Instance.GetController<GameEndController>().Win();
         }
 
         public void MissionFailed(MissionOwnerData owner)
