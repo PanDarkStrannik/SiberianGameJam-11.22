@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779d5ae37854e6543b408955df0710ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialogPanel: {fileID: 7968355271152644175}
 --- !u!1001 &8735675880702031987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -240,3 +241,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2420282951543864040, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
   m_PrefabInstance: {fileID: 8735675880702031987}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7968355271152644175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1706321137259710524, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+  m_PrefabInstance: {fileID: 8735675880702031987}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eacc17987cab8ea43abf5e20d157766d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,21 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace GameClient
 {
     public class UiDialogPanel : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
+        [SerializeField, AssetsOnly] private UiDialogLir _lir;
 
-        // Update is called once per frame
-        void Update()
+        public void Initialize(DialogTree answer, Sprite playerDialogIcon, string npcName = "", Sprite npcIcon = null)
         {
-        
+            var lir = Instantiate(_lir.gameObject, transform).GetComponent<UiDialogLir>();
+
+            if (answer.Dialog.NpcSay == "")
+            {
+                lir.Initialize(null, "", "NONE");
+            }
+            else
+            {
+                lir.Initialize(npcIcon, answer.Dialog.NpcSay, npcName);
+            }
+
+            lir = Instantiate(_lir.gameObject, transform).GetComponent<UiDialogLir>();
+            if (answer.Dialog.PlayerSay == "")
+            {
+                lir.Initialize(null, "", "NONE");
+            }
+            else
+            {
+                lir.Initialize(playerDialogIcon, answer.Dialog.PlayerSay);
+            }
         }
     }
 }

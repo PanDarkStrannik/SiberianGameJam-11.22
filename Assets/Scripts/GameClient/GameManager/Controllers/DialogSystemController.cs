@@ -28,6 +28,9 @@ namespace GameClient
 
         public void StartDialog(MissionOwnerData owner)
         {
+            _missionOwner = owner;
+            _npcIcon = owner.NpcSprite;
+            _npcName = owner.NpcName;
             StartDialog(owner.MainDialog, owner.NpcName, owner.NpcSprite);
         }
 
@@ -35,7 +38,7 @@ namespace GameClient
         {
             _currentDialog = dialog;
             Player.Instance.GetController<PlayerInputController>().Disable();
-            _uiController.ShowDialog(dialog.Dialog, Data.PlayerIcon, ContinueDialog, npcName, npcIcon);
+            _uiController.ShowDialog(dialog, Data.PlayerIcon, ContinueDialog, npcName, npcIcon);
         }
 
         private void ContinueDialog()
@@ -67,7 +70,7 @@ namespace GameClient
         private void ChooseInDialog(DialogTree chosenAnswer)
         {
             _currentDialog = chosenAnswer;
-            _uiController.ShowDialog(_currentDialog.Dialog, Data.PlayerIcon, ContinueDialog, _npcName, _npcIcon);
+            _uiController.ShowDialog(_currentDialog, Data.PlayerIcon, ContinueDialog, _npcName, _npcIcon);
         }
 
         private void EndDialog()
