@@ -15,6 +15,8 @@ namespace GameClient
         private string _npcName = "";
         private Sprite _npcIcon;
 
+        private bool _firstInit = true;
+
         protected override void InternalInitialize()
         {
             _gameManager = GameManager.Instance;
@@ -24,6 +26,18 @@ namespace GameClient
         private void OnGameManagerInitialized()
         {
             _uiController = _gameManager.GetController<UiController>();
+            var levelManager = _gameManager.GetController<LevelSwitchController>();
+            levelManager.OnGameLevelLoaded += levels =>
+            {
+                if (!_firstInit || levels != LevelSwitchModule.GameLevels.Visa) return;
+                var dialog = Data.Tree;
+                StartDialog(dialog, Data.Estonian.NpcName, Data.Estonian.NpcSprite);
+            };
+        }
+
+        public override void Refresh()
+        {
+            _firstInit = false;
         }
 
         public void StartDialog(MissionOwnerData owner)
