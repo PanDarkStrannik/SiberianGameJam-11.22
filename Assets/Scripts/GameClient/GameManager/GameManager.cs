@@ -19,6 +19,12 @@ namespace GameClient
             }
         }
 
+        public void GameManagerGameStart()
+        {
+            var levelController = GetController<LevelSwitchController>();
+            levelController.ChangeLevel(LevelSwitchModule.GameLevels.Visa);
+        }
+
         public class GameManagerControllerFabric : BaseGameManageControllerFabric
         {
             protected override Dictionary<Type, Type> GetDataCreatedPair()
