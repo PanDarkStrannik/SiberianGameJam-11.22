@@ -37,7 +37,7 @@ MonoBehaviour:
         GameCore]], mscorlib
     - Name: 
       Entry: 12
-      Data: 7
+      Data: 8
     - Name: 
       Entry: 7
       Data: 1|GameClient.GameEndModule, GameClient
@@ -385,6 +385,135 @@ MonoBehaviour:
     - Name: _dialogWithAnswers
       Entry: 10
       Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 20|GameClient.PlayerStatModule, GameClient
+    - Name: _stats
+      Entry: 7
+      Data: 21|System.Collections.Generic.Dictionary`2[[GameClient.PlayerStatModule+PlayerStats,
+        GameClient],[GameClient.PlayerStatModule+StatData, GameClient]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 22|System.Collections.Generic.EnumEqualityComparer`1[[GameClient.PlayerStatModule+PlayerStats,
+        GameClient]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 23|GameClient.PlayerStatModule+StatData, GameClient
+    - Name: _startValue
+      Entry: 3
+      Data: 0
+    - Name: _fromMaxToMin
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 24|GameClient.PlayerStatModule+StatData, GameClient
+    - Name: _startValue
+      Entry: 3
+      Data: 0
+    - Name: _fromMaxToMin
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 25|GameClient.PlayerStatModule+StatData, GameClient
+    - Name: _startValue
+      Entry: 3
+      Data: 100
+    - Name: _fromMaxToMin
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 26|GameClient.PlayerStatModule+StatData, GameClient
+    - Name: _startValue
+      Entry: 3
+      Data: 100
+    - Name: _fromMaxToMin
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _statDamageTable
+      Entry: 7
+      Data: 27|System.Collections.Generic.List`1[[GameClient.PlayerStatModule+StatDamageLir,
+        GameClient]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
