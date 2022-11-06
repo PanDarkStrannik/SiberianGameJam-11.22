@@ -91,6 +91,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb1d55322121af346967d2aabe701f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialogPanel: {fileID: 4872417875573226276}
+  _parentTransform: {fileID: 8787978866487546681}
+  _buttonPrefab: {fileID: 3607396756641317341, guid: 18c953a8fe310ef43879da691e623f8a, type: 3}
 --- !u!1 &8058136809017468825
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,8 +340,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 8981805463359850491, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+--- !u!114 &4872417875573226276 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1706321137259710524, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}
+  m_PrefabInstance: {fileID: 6066450088116695832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eacc17987cab8ea43abf5e20d157766d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8477690620446607856 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2420282951543864040, guid: 93a3ffcfccf08b146b40c7dc55f5752c, type: 3}

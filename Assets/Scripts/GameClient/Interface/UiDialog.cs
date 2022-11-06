@@ -1,21 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace GameClient
 {
-    public class UiDialog : MonoBehaviour
+    public class UiDialog : MonoBehaviour, IPointerClickHandler
     {
-        // Start is called before the first frame update
-        void Start()
+        [SerializeField] private UiDialogPanel _dialogPanel;
+
+        private Action _onDialogContinue;
+
+        public void Initialize(DialogTree dialog, Sprite playerDialogIcon, Action onDialogContinue, string npcName = "", Sprite npcIcon = null)
         {
-        
+            _onDialogContinue = onDialogContinue;
+            _dialogPanel.Initialize(dialog, playerDialogIcon, npcName, npcIcon);
         }
 
-        // Update is called once per frame
-        void Update()
+        public void OnPointerClick(PointerEventData eventData)
         {
-        
+            Destroy(gameObject);
+            _onDialogContinue?.Invoke();
         }
     }
 }

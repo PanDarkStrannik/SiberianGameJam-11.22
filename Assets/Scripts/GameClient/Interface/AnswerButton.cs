@@ -1,5 +1,5 @@
 using System;
-using UnityEngine;
+using System.Linq;
 
 namespace GameClient
 {
@@ -11,8 +11,28 @@ namespace GameClient
         {
             _tree = tree;
             _answer = answer;
-            var missionData = _tree.StartMission;
-            
+            var treeForMissionType = tree;
+            var missionType = MissionData.MissionType.None;
+            while (treeForMissionType.Answers.Any() && missionType  == MissionData.MissionType.None)
+            {
+                treeForMissionType = treeForMissionType.Answers.First();
+                missionType = treeForMissionType.StartMission;
+            }
+            switch (missionType)
+            {
+                case MissionData.MissionType.Agree:
+                    ButtonText.text = "Согласиться";
+                    break;
+                case MissionData.MissionType.Beat:
+                    ButtonText.text = "Избить";
+                    break;
+                case MissionData.MissionType.Hack:
+                    ButtonText.text = "Взломать";
+                    break;
+                case MissionData.MissionType.Bribe:
+                    ButtonText.text = "Подкупить";
+                    break;
+            }
         }
 
         protected override void InternalButtonClick()

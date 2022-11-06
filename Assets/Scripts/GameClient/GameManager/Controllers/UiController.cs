@@ -19,20 +19,22 @@ namespace GameClient
 
         }
 
-        public void ShowDialog(DialogData dialog, Sprite playerDialogIcon, Action onDialogContinue, string npcName = "", Sprite npcIcon = null)
+        public void ShowDialog(DialogTree dialog, Sprite playerDialogIcon, Action onDialogContinue, string npcName = "", Sprite npcIcon = null)
         {
-            CreateWindow(Data.Dialog);
+            CreateWindow(Data.Dialog).GetComponent<UiDialog>()
+                .Initialize(dialog, playerDialogIcon, onDialogContinue, npcName, npcIcon);
         }
 
         public void ShowDialogWithAnswers(DialogTree answersTree, Sprite playerDialogIcon, Action<DialogTree> onDialogContinue, string npcName = "", Sprite npcIcon = null)
         {
-           CreateWindow(Data.DialogWithAnswers);
+            CreateWindow(Data.DialogWithAnswers).GetComponent<UiDialogWithAnswers>()
+                .Initialize(answersTree, playerDialogIcon, onDialogContinue, npcName, npcIcon);
         }
 
 
-        private void CreateWindow(Component mono)
+        private GameObject CreateWindow(Component mono)
         {
-            Object.Instantiate(mono.gameObject, _targetCanvas.transform);
+            return Object.Instantiate(mono.gameObject, _targetCanvas.transform);
         }
     }
 }
